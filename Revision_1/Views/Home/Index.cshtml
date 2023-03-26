@@ -1,0 +1,14 @@
+﻿@model List<Revision_1.Models.Product>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <table class="table">
+        @foreach(var m in Model )
+            {
+                <tr><td>@m.Name</td><td>@m.Price</td></tr>
+            }
+    </table>
+</div>
+
