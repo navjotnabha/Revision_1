@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace Revision_1.ApiControllers
 {
-   // [Route("api/brands")]
+
     public class BrandsController : ApiController
     {
         
