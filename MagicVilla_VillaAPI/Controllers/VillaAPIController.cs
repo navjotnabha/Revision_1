@@ -9,15 +9,10 @@ namespace MagicVilla_VillaAPI.Controllers
     [ApiController]
     public class VillaAPIController:ControllerBase
     {
-
         [HttpGet]
-        public ActionResult GetVillas()
+        public IEnumerable<VillaDTO> GetVillas()
         {
-            
-            return Ok(); 
-         
-            return Ok(VillaStore.villaList);
-          
+            return VillaStore.villaList;
         }
         [HttpGet("{id:int}")]
         public VillaDTO GetVilla(int id)                                            //not public IEnumerable<VillaDTO> GetVilla(int id) because we are returning single villa not list
